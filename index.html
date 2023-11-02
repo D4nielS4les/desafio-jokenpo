@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Jogo Jokenpo</title>
+</head>
+<body>
+    <h1>Jogador de Jokenpô</h1>
+    <div class="container">
+        <div id="level">
+            <h1>Nível: </h1>
+        </div>
+        <div id="win">
+            <h2>Vitórias: </h2>
+        </div>
+        <div id="score" class="score">
+            <h1>Pontos: 0</h1>
+        </div>
+        <div class="cards">
+            <div class="choice-card" onclick="playerChoice('rock')">
+                <img src="rock.png" alt="Pedra">
+                <p>Pedra</p>
+            </div>
+            <div class="choice-card" onclick="playerChoice('paper')">
+                <img src="paper.png" alt="Papel">
+                <p>Papel</p>
+            </div>
+            <div class="choice-card" onclick="playerChoice('scissors')">
+                <img src="scissors.png" alt="Tesoura">
+                <p>Tesoura</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="computer">
+            <h1>Computador</h1>
+            <div class="choice-card-computer">
+                <img id="computer-choice" src="default.png" alt="Escolha do computador">
+            </div>
+        </div>
+        
+    </div>
+    <div class="result">
+        <h2 id="result-text"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

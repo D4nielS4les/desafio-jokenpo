@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+}
+
+.container, .computer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    border: 2px solid #33333354;
+}
+
+.container {
+    background-color: #089ff1;
+}
+
+.computer {
+    background-color: #f68a8a;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.choice-card, .choice-card-computer {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(2, 2, 2, 0.2);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.choice-card {
+    background-color: #ffed63;
+}
+
+.choice-card-computer {
+    background-color: #f63434;
+}
+
+.choice-card img, .choice-card-computer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.choice-card-computer img {
+    width: 150px;
+    height: 150px;
+}
+
+.choice-card:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 500px;
+    border: 2px solid #333;
+    background-color: #ffed63;
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.score, #level, #win {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+    margin: 4px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.score {
+    background-color: #f68a8a;
+}
+
+#level {
+    background-color: #f68a8a;
+}
+
+#win {
+    background-color: #f68a8a;
+}
+
+h1{
+    color: #fff;
+    font-weight: bolder;
+}
